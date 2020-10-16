@@ -1,0 +1,71 @@
+.currentWeather {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    &__mainParameters {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(17, 245, 196, 0.4);
+        border: 2px solid #ffffff;
+        width: 40%;
+
+        img {
+            width: 20%;
+        }
+    }
+
+    &__city {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    &__otherParameters {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(17, 245, 196, 0.4);
+        border: 2px solid #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        width: 50%;
+
+        div {
+            width: 32%;
+            padding: 10px;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    &__btn {
+        margin-bottom: 20px;
+    }
+}
+
+.parameterName {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.parameterValue {
+    font-size: 15px;
+}
+
+@media (max-width: 520px){
+    .currentWeather {
+        flex-direction: column;
+
+        &__mainParameters {
+            width: auto;
+            margin-bottom: 20px;
+        }
+
+        &__otherParameters {
+            width: auto;
+        }
+    }
+}

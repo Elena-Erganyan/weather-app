@@ -1,0 +1,23 @@
+.search {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__field {
+        width: 250px;
+        padding: 7px;
+        border-radius: 10px;
+        border: 1px solid #cccccc;
+    }
+}
+
+@media (max-width: 450px){
+    .search {
+    
+        &__field {
+            width: 160px;
+        }
+    }
+}

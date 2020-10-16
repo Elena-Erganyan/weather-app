@@ -1,0 +1,26 @@
+.card {
+    border-radius: 10px;
+    padding: 10px;
+    background-color:rgba(62, 102, 235, 0.3);
+    border: 2px solid #ffffff;
+    width: 15%;
+
+    &__date {
+        font-weight: bold;
+    }
+
+    img {
+        width: 45px;
+    }
+}
+
+@media (max-width: 450px){
+    .card {
+        width: 18%;
+        font-size: 12px;
+    
+        img {
+            width: 30px;
+        }
+    }
+}
